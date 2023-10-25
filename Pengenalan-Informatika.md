@@ -9,8 +9,8 @@ Puaka merupkan sebuah game bergenre survival yang memiliki tema Nusantara. Game 
 ## 1.3. Branding
 
 •	Merk		: Puaka
-•	Tagline		: Pokemon dengan kearifan lokal
-•	Campaign 	: Memperkenalkan bagian dari budaya Indonesia melalui media game khususnya pada makhluk-makhluk halus yang ada di seluruh Zamin(latar dunia game Puaka) yang memiliki backstory nya masing-masing, dan tentunya ramah untuk seluruh kalangan.
+•	Tagline		: "Un-Bhinneka"
+•	Campaign 	: Memperkenalkan bagian dari budaya Indonesia melalui media game khususnya pada makhluk-makhluk halus yang ada di Indonesia, dengan latar belakang ceritanya masing-masing.
 •	Target user :
   o	Usia 10+
   o	Orang yang gemar dengan makhluk halus
