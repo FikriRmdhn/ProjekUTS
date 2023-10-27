@@ -1,6 +1,8 @@
 # Membuat game survival casual (mudah) yang bertemakan Nusantara
 
 ## 1.1 Latar Belakang
+Game dengan genre survival akhir-akhir ini menjadi sebuah trend yang banyal diminati oleh semua kalangan. Gameplay bertahan hidup dan eksplorasi dunia yang luas menjadi identitas utama pada game bergenre survival. Hadirnya game Minecraft dari publisher mojang menjadi permulaan dimulainya survival sandbox lebih dikenal banyak orang. Memiliki segudang mekanik yang membuat kreatifitas para playernya tak terbatas. Game besar lainnya yang bergenre sama dengan minecraft diantaranya ada Ark, Terraria, The Forrest, V Rising, Subnautica, Rafft, dan game lainnya.
+Dengan banyaknya fans dari game survival, Puaka hadir dengan maksud memperkenalkan budaya Indonesia. Puaka Bertemakan Nusantara, dimana ornamen dalam game mengandung unsur-unsur budaya Indonesia di dalamnya, serta makhluk-makhluk yang menghuni dunia Puaka terinspirasi dari makhluk yang ada di Indonesia.
 
 ## 1.2 Deskripsi Teknologi Informasi
 Puaka merupkan sebuah game bergenre survival yang memiliki tema Nusantara. Game ini dibuat menggunakan engine Godot 4 dengan bahasa GDScript. Puaka memiliki gameplay yang lebih casual (mudah) dan memiliki tone game yang ringan, serta memiliki beberapa core mechanic seperti game survival lainnya (bertahan hidup, membangun base, dan lain-lain).  
