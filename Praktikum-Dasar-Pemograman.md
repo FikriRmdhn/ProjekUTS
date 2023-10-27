@@ -4,8 +4,7 @@
 
 ### Latar Belakang
 
-Puaka diambil dari bahasa Melayu yang merujuk pada dedemit atau makhluk ghaib. Karena, seluruh monster pada dunia game ini akan berisikan makhluk-makhluk halus yang ada di Indonesia seperti, tuyul, banas pati, dan kawan-kawan. Dunia pada game ini disebut _Zamin_ yang memiliki arti tanah atau negeri, juga diambil dari bahasa Melayu. Dunia zamin akan berlatarkan Nusantara, akan banyak ornamen-ornamen yang bertemakan Nusantara.
-Tema yang dibawakan game ini yaitu Nusantara. Jadi, akan banyak sekali makhluk-makhluk gaib, latar yang memiliki ornamen Nusantara, dan mengambil beberapa cerita rakyat(folks lore) sebagai latar cerita game ini.
+Game dengan genre survival akhir-akhir ini menjadi sebuah trend yang banyal diminati oleh semua kalangan. Gameplay bertahan hidup dan eksplorasi dunia yang luas menjadi identitas utama pada game bergenre survival. Hadirnya game Minecraft dari publisher mojang menjadi permulaan dimulainya survival sandbox lebih dikenal banyak orang. Memiliki segudang mekanik yang membuat kreatifitas para playernya tak terbatas. Game besar lainnya yang bergenre sama dengan minecraft diantaranya ada Ark, Terraria, The Forrest, V Rising, Subnautica, Rafft, dan game lainnya. Dengan banyaknya fans dari game survival, Puaka hadir dengan maksud memperkenalkan budaya Indonesia. Puaka Bertemakan Nusantara, dimana ornamen dalam game mengandung unsur-unsur budaya Indonesia di dalamnya, serta makhluk-makhluk yang menghuni dunia Puaka terinspirasi dari makhluk yang ada di Indonesia.
 
 ### Deskripsi dan Alur Cerita
 
