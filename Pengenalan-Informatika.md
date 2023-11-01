@@ -33,26 +33,17 @@ Pemain |	Mengeksplorasi dunia Zamin	| Menguak mister di dunia zamin |	⭐⭐⭐�
 Pemain	| Bertarung dengan monster | 	Memenangkan berbagai material untuk crafting |	⭐⭐⭐⭐⭐
 Pemain	| Membuat base | Mempunyai tempat untuk berlindung |	⭐⭐⭐⭐⭐
 Pemain	| Berinteraksi dengan rakyat zamin(NPC)	| Lebih mengenal latar belakang dunia zamin | ⭐⭐⭐
+Pemain	| Mendapatkan ending yang bercabang | Mempunyai replaybility yang panjang | ⭐⭐⭐
+Pemain	| Menikah  | Bisa lebih mengapresiasi terhadap NPC yang difavoritkan | ⭐⭐⭐⭐️
+Pemain	| Kustomisasi yang sangat bebas | MC pada game memiliki persona yang sama dengan pemain | ⭐⭐⭐
 
 
 ## 3. Struktur Data	
+
+'''mermaid
+
 erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
+
    
 ## 4. Arsitektur Sistem
 
