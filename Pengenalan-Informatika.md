@@ -30,21 +30,76 @@ Sebagai	| Saya ingin bisa |	Sehingga	| Prioritas
 ---|---|---|---
 Pemain	| Bertahan hidup di dunia Zamin yang berbahaya	| Bisa bermain lebih lama	| ⭐⭐⭐⭐⭐
 Pemain |	Mengeksplorasi dunia Zamin	| Menguak mister di dunia zamin |	⭐⭐⭐⭐⭐
+Pemain	| Memiliki side-kick yang berupa NPC maupun monster | Dapat mempermudah dalam hal eksplorasi maupun bertarung | ⭐⭐⭐⭐
 Pemain	| Bertarung dengan monster | 	Memenangkan berbagai material untuk crafting |	⭐⭐⭐⭐⭐
-Pemain	| Membuat base | Mempunyai tempat untuk berlindung |	⭐⭐⭐⭐⭐
+Pemain	| Membuat base | Mempunyai tempat untuk berlindung dan tempat untuk istirahat |	⭐⭐⭐⭐⭐
+Pemain	| Pertarungan melawan boss yang menantang | Salah satu cara untuk membuktikan kekuatan dan seberapa jago seorang player | ⭐⭐⭐⭐
 Pemain	| Berinteraksi dengan rakyat zamin(NPC)	| Lebih mengenal latar belakang dunia zamin | ⭐⭐⭐
 Pemain	| Mendapatkan ending yang bercabang | Mempunyai replaybility yang panjang | ⭐⭐⭐
-Pemain	| Menikah  | Bisa lebih mengapresiasi terhadap NPC yang difavoritkan | ⭐⭐⭐⭐️
-Pemain	| Kustomisasi yang sangat bebas | MC pada game memiliki persona yang sama dengan pemain | ⭐⭐⭐
+Pemain	| Menikah dengan NPC favorit  | Bisa lebih mengapresiasi terhadap NPC yang difavoritkan | ⭐⭐⭐⭐️
+Pemain	| Kustomisasi karakter yang sangat bebas | MC pada game memiliki persona yang sama dengan pemain | ⭐⭐⭐
+Pemain	| Mendapatkan cuaca dan musim yang berbeda-beda | Bisa mendapatkan suasana yang berbeda setiap saatnya dan merasakan dunia yang lebih imersif | ⭐⭐⭐⭐
+Pemain	| Bermain secara online | Pengalaman bermain lebih seru karena bertemu berbagai player di seluruh dunia | ⭐⭐⭐
+Pemain	| Membentuk aliansi dengan player lain | Dapat membangun aliansi hingga menjadi sebuah kerajaan sendiri | ⭐⭐⭐⭐
+Pemain	| Melakukan trading baik secara online maupun offline | Menjadi salah satu sumber untuk mencari uang | ⭐⭐⭐⭐
 
 
 ## 3. Struktur Data	
 
-'''mermaid
+```mermaid
 
 erDiagram
-
+    Profile ||--|| Player : has
+    Profile{
+    int player_id 
+    string nickname
+    string password
+    string email
+    }
    
+    Player{
+        int profile_id
+        int character_id 
+    }
+    
+
+    Player ||--|{ Character  : create
+   Character{
+        string item_name
+        int item_id
+    }
+    Player ||--o{ World  : create
+    World {
+        string world_name
+        int creator_id
+        int created_time
+        int world_id
+        int password
+    }
+    World ||--|{ Object : has
+    Object{
+        int object_id
+        
+    }
+    Character ||--|| Statistic : has
+    Statistic ||--|| Skills : has
+    Character ||--|{ Equiped : has
+    Equiped ||--|| Item : use
+    Inventory ||--o{ Item : hold
+    Character ||--|{ Object : interact
+    Character ||--|| Inventory  : has 
+    Inventory{
+        string item_name
+        int item_id
+    }
+
+    Object ||--|| Item : has
+    Object ||--|| Creatures : has
+    Object ||--|| Animals : has
+    Object ||--|| Building : has
+    Object ||--|| NPC : has
+
+```
 ## 4. Arsitektur Sistem
 
 ## 5. Teknologi, Library, danFramework
