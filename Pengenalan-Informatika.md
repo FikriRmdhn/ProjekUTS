@@ -81,29 +81,130 @@ erDiagram
         int object_id
         
     }
-    Character ||--|| Statistic : has
-    Statistic ||--|| Skills : has
+    
     Character ||--|{ Equiped : has
+    Equiped {
+        string item_name
+        int item_id
+        string item_speciality
+        int item_stats
+    }
     Equiped ||--|| Item : use
     Inventory ||--o{ Item : hold
+    Inventory ||--o{ Material : hold
     Character ||--|{ Object : interact
     Character ||--|| Inventory  : has 
     Inventory{
+        int item_id
+        int equiped_item_id
+        string item_name
+        string equiped_item_name
+        int material_id
+        string material_name
+        int object_quantity
+    }
+    Object ||--|| Nature : has
+    Nature {
+        int nature_id
+        string nature_name
+    }
+    Nature ||--|| Material : has
+    Material{
+        int material_id
+        string material_name
+    }
+    Item ||--|| Skills : has
+    Skills {
+        int speciality_id
+        string speciality_name
+    }
+    Object ||--|| Item : has
+    Item {    
         string item_name
         int item_id
+        int item_speciality
+        int item_stats
     }
-
-    Object ||--|| Item : has
     Object ||--|| Creatures : has
+    Creatures {
+        int creature_id
+        string creature_name
+    }
     Object ||--|| Animals : has
+    Animals {
+        int animal_id
+        string animal_name
+        int animal_stats
+    }
+   
+
     Object ||--|| Building : has
+    Building{
+        int building_id
+        int position
+        string building_name
+    }
     Object ||--|| NPC : has
+    NPC {
+        int NPC_id
+        string NPC_name
+    }
 
 ```
 ## 4. Arsitektur Sistem
-
-## 5. Teknologi, Library, danFramework
+```mermaid
+flowchart TD
+    A[Mobile : Godot Engine] <-->   B[Game Server : C++] 
+    B <--> C[Database : MySQL] 
+    
+```
+## 5. Teknologi, Library, dan Framework
 Godot Engine 4 dengan bahasa GDScript.
+```
+extends CharacterBody2D
+
+var speed = 90  
+
+var player_state
+
+func _physics_process(delta):
+	var direction = Input.get_vector("left", "right", "up", "down")
+	
+	if direction.x == 0 and direction.y == 0 :
+		player_state = "idle"
+	
+	elif direction.x != 0 or direction.y != 0 :
+		player_state = "walk" 
+		
+	velocity = direction * speed
+	move_and_slide()
+
+	play_anim(direction)
+
+func play_anim(dir) :
+	
+ if player_state == "idle" :
+		
+  $AnimatedSprite2D.play("idle")
+	
+ if player_state == "walk" :
+		
+  if dir.y == -1 :
+			
+   $AnimatedSprite2D.play("n-walk")
+		
+  if dir.y == 1 :
+		
+   $AnimatedSprite2D.play("s-walk")	
+		
+  if dir.x == -1 :
+		
+   $AnimatedSprite2D.play("w-walk")
+		
+  if dir.x == 1 :
+		
+   $AnimatedSprite2D.play("e-walk")	
+```
 
 ## 6. Desain UI/UX
 ![Referensi game "Crosscode"](https://github.com/FikriRmdhn/ProjekUTS/assets/144408745/75d7f38b-e1b8-413d-bf7e-a35377d2826f)
