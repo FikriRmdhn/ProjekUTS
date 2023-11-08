@@ -23,7 +23,11 @@ Puaka diambil dari bahasa Melayu yang merujuk pada dedemit atau makhluk ghaib. K
     -	Santai
     - Ramah untuk keluarga
     - Gameplay yang mudah dipahami
+- Referensi desain UI/UX :
   
+  ![Free Up the Inventory](https://github.com/FikriRmdhn/ProjekUTS/assets/144408745/28af54b4-30cf-494c-af84-9833e0c832ed)
+![UI Reff](https://github.com/FikriRmdhn/ProjekUTS/assets/144408745/495e411c-75a9-4162-b1f3-396a0f70fe4a)
+
 
 ## 2. User Story
 Sebagai	| Saya ingin bisa |	Sehingga	| Prioritas
@@ -207,6 +211,6 @@ func play_anim(dir) :
 ```
 
 ## 6. Desain UI/UX
-![Referensi game "Crosscode"](https://github.com/FikriRmdhn/ProjekUTS/assets/144408745/75d7f38b-e1b8-413d-bf7e-a35377d2826f)
 
+![Screenshot (35)](https://github.com/FikriRmdhn/ProjekUTS/assets/144408745/13a4e0ba-9057-479e-b060-6f55bb8b38a9)
 
